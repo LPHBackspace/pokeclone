@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://bkbakcyhohhjy"]
+
+[ext_resource type="PackedScene" uid="uid://baw8rhdmfmc0h" path="res://scenes/under_whater.tscn" id="1_0q4ar"]
+[ext_resource type="PackedScene" uid="uid://pxl7f4fb8yda" path="res://scenes/map.tscn" id="1_d7xlg"]
+[ext_resource type="PackedScene" uid="uid://b2s0yuttovdl3" path="res://scenes/whater.tscn" id="2_jrfqp"]
+[ext_resource type="PackedScene" uid="uid://cw032g6s8ktb" path="res://scenes/character.tscn" id="4_rntkj"]
+[ext_resource type="PackedScene" uid="uid://dvvj26uvxpttb" path="res://scenes/soundtrack.tscn" id="4_uso2r"]
+
+[node name="main" type="Node2D"]
+
+[node name="under_whater" parent="." instance=ExtResource("1_0q4ar")]
+position = Vector2(-106, 117)
+
+[node name="Whater" parent="." instance=ExtResource("2_jrfqp")]
+position = Vector2(534, 403)
+scale = Vector2(3, 3)
+
+[node name="map" parent="." instance=ExtResource("1_d7xlg")]
+position = Vector2(135, 13)
+
+[node name="soundtrack" parent="." instance=ExtResource("4_uso2r")]
+
+[node name="character" parent="." instance=ExtResource("4_rntkj")]
+position = Vector2(572, 251)

@@ -1,0 +1,116 @@
+[gd_scene load_steps=10 format=3 uid="uid://cw032g6s8ktb"]
+
+[ext_resource type="Texture2D" uid="uid://4o0x436ymdjo" path="res://assets/characters/player.png" id="1_fxibh"]
+[ext_resource type="Script" path="res://scripts/character.gd" id="1_n4gak"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f04ea"]
+size = Vector2(26, 10)
+
+[sub_resource type="Animation" id="Animation_ov2h6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+
+[sub_resource type="Animation" id="Animation_7hxbe"]
+resource_name = "walk_up"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [12, 13, 14, 15]
+}
+
+[sub_resource type="Animation" id="Animation_qdoec"]
+resource_name = "walk_down"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_w6l0x"]
+resource_name = "walk_left"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_3skcd"]
+resource_name = "walk_right"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7viqu"]
+_data = {
+"RESET": SubResource("Animation_ov2h6"),
+"walk_down": SubResource("Animation_qdoec"),
+"walk_left": SubResource("Animation_w6l0x"),
+"walk_right": SubResource("Animation_3skcd"),
+"walk_up": SubResource("Animation_7hxbe")
+}
+
+[node name="character" type="CharacterBody2D"]
+script = ExtResource("1_n4gak")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_fxibh")
+hframes = 4
+vframes = 4
+frame = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 25)
+shape = SubResource("RectangleShape2D_f04ea")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7viqu")
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.3, 1.3)
