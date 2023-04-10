@@ -1,0 +1,39 @@
+2a60927148abd1d33b818b535e306557
+::res://::1681166768
+README.md::TextFile::-1::1681166025::0::1::::<><>::
+::res://assets/::1681166823
+icon.svg::CompressedTexture2D::6260084046285536914::1681166602::1681166637::1::::<><>::
+sand.jpeg::CompressedTexture2D::2054011348583517719::1681166602::1681166637::1::::<><>::
+ultra ball.png::CompressedTexture2D::987353053850192321::1681166823::1681166823::1::::<><>::
+::res://assets/characters/::1681166637
+player.png::CompressedTexture2D::2065938320011473676::1681166602::1681166637::1::::<><>::
+::res://assets/tiles/::1681166602
+::res://assets/tiles/Texture/::1681166637
+TX Plant.png::CompressedTexture2D::1655285241930060947::1681166602::1681166637::1::::<><>::
+TX Player.png::CompressedTexture2D::3159045081271450941::1681166602::1681166637::1::::<><>::
+TX Props.png::CompressedTexture2D::4179395152159995744::1681166602::1681166637::1::::<><>::
+TX Shadow Plant.png::CompressedTexture2D::7344857229213102665::1681166602::1681166637::1::::<><>::
+TX Shadow.png::CompressedTexture2D::1011013174860108867::1681166602::1681166637::1::::<><>::
+TX Struct.png::CompressedTexture2D::3920995255634023786::1681166602::1681166637::1::::<><>::
+TX Tileset Dirt.png::CompressedTexture2D::1152500218865760419::1681166602::1681166637::1::::<><>::
+TX Tileset Grass.png::CompressedTexture2D::797269810021451237::1681166602::1681166637::1::::<><>::
+TX Tileset Stone Ground.png::CompressedTexture2D::1242161749494244290::1681166602::1681166637::1::::<><>::
+TX Tileset Wall.png::CompressedTexture2D::7056976003244835710::1681166602::1681166637::1::::<><>::
+::res://gd_shaders/::1681166602
+water.gdshader::Shader::-1::1681166602::0::1::::<><>::
+::res://ost/::1681166602
+::res://ost/sfx/::1681166637
+bumpintowall.mp3::AudioStreamMP3::7685241489941078926::1681166602::1681166637::1::::<><>::
+::res://ost/soundtrack/::1681166637
+1-05 Littleroot Town.mp3::AudioStreamMP3::7287872509562509574::1681166602::1681166637::1::::<><>::
+1-07 Lake.mp3::AudioStreamMP3::7766091921110159576::1681166602::1681166637::1::::<><>::
+::res://scenes/::1681166640
+character.tscn::PackedScene::187363353747020343::1681166602::0::1::::<><>::uid://4o0x436ymdjo<>res://scripts/character.gd
+main.tscn::PackedScene::3090391498225580126::1681166640::0::1::::<><>::uid://baw8rhdmfmc0h<>uid://pxl7f4fb8yda<>uid://b2s0yuttovdl3<>uid://cw032g6s8ktb<>uid://dvvj26uvxpttb
+map.tscn::PackedScene::1101038682885165502::1681166602::0::1::::<><>::uid://lmg6gndu35uf<>uid://rxyhtinu3l35<>uid://bv4mhpfn4hl35<>uid://c7spmmqj8b6f7<>uid://b0ssa63ndeg37
+soundtrack.tscn::PackedScene::8677176029789003483::1681166602::0::1::::<><>::res://scripts/soundtrack.gd
+under_whater.tscn::PackedScene::2433871386390338513::1681166602::0::1::::<><>::uid://qojrl21p5g6n<>uid://b0ssa63ndeg37
+whater.tscn::PackedScene::4320240126067028294::1681166602::0::1::::<><>::res://gd_shaders/water.gdshader<>uid://cvgow1die8ncs
+::res://scripts/::1681166602
+character.gd::GDScript::-1::1681166602::0::1::::<>CharacterBody2D<>::
+soundtrack.gd::GDScript::-1::1681166602::0::1::::<>Node2D<>::
