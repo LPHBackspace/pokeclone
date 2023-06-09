@@ -1,1 +1,8 @@
+res://scenes/map.tscn
 res://scenes/main.tscn
+res://scenes/whater.tscn
+res://scenes/under_whater.tscn
+res://scenes/batle.tscn
+res://scenes/text_boxes/text_box.tscn
+res://scenes/text_boxes/life_bar.tscn
+res://scenes/character.tscn

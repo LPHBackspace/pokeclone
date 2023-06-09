@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bulvcumgkhjj3"]
+
+[node name="life_bar" type="Node2D"]

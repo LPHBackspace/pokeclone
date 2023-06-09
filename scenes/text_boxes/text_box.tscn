@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://du3x6d6drnwq2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u3vgn"]
+bg_color = Color(0.192157, 0.192157, 0.192157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ob0ie"]
+bg_color = Color(0.913725, 0.788235, 0.0392157, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rsxpg"]
+bg_color = Color(0.94902, 0.94902, 0.94902, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f7u3h"]
+bg_color = Color(0.282353, 0.211765, 0.556863, 1)
+
+[node name="text_box" type="CanvasLayer"]
+
+[node name="ColorRect" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 433.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_u3vgn")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 23.0
+offset_top = 452.0
+offset_right = -22.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ob0ie")
+
+[node name="ColorRect3" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 41.0
+offset_top = 466.0
+offset_right = -44.0001
+offset_bottom = -33.0001
+theme_override_styles/panel = SubResource("StyleBoxFlat_rsxpg")
+
+[node name="ColorRect4" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 477.0
+offset_right = -54.0001
+offset_bottom = -42.0001
+theme_override_styles/panel = SubResource("StyleBoxFlat_f7u3h")
